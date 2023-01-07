@@ -1,0 +1,15 @@
+{
+  "loginInformation": {
+    "username": "admin",
+    "password": "password"
+  },
+  "campaignList": [
+    {
+      "name": "Kampyan",
+      "description": "AÇıklama",
+      "point": 0,
+      "date": "7/1/2023",
+      "id": 8
+    }
+  ]
+}

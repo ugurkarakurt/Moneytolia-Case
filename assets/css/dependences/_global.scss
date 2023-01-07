@@ -1,0 +1,71 @@
+* {
+  font-family: "Comfortaa", sans-serif;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  scrollbar-width: thin;
+  scrollbar-color: $grey4 $grey2;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: $grey2;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: $grey4;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: $grey2;
+}
+
+@font-face {
+  font-family: comfortaa;
+  src: url(../fonts/Comfortaa-VariableFont_wght.ttf);
+}
+body {
+  font-family: comfortaa;
+  background-color: $grey1;
+}
+
+.alert-message {
+  position: fixed;
+  right: 10px;
+  top: 110px;
+  min-width: 200px;
+  width: fit-content;
+  border: 1px solid $grey7;
+  height: 40px;
+  border-radius: 5px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 10px;
+  display: none;
+
+  &.active {
+    display: flex;
+  }
+
+  &.success {
+    background-color: $blue3;
+    color: $white;
+  }
+
+  &.warning {
+    background-color: $red;
+    color: $white;
+  }
+
+  &.info {
+    background-color: $gold4;
+    color: $white;
+  }
+}

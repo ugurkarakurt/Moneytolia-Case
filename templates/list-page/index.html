@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="" type="image/icon">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <title>Moneytolia Case</title>
+</head>
+
+<body class="list-page">
+  <!--  Header Section-->
+  <header id="header">
+    <div class="header-container">
+      <div class="logo">
+        <img src="../../assets/img/moneytolia-logo.svg" alt="Logo">
+      </div>
+      <nav class="nav">
+        <ul>
+          <li>
+            <button class="js-login-button">
+              User
+              <img src="../../assets/img/man.png" alt="user">
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--  Header Section End -->
+
+  <!--  Main Section-->
+  <main class="list-page">
+    <img class="cover-image" src="../../assets/img/moneytolia-fly.png" alt="">
+
+    <aside class="js-aside">
+      <div class="aside-title">
+        <span>Main</span>
+        <button class="toggle-aside js-toggle-aside">
+          <img src="../../assets/img/exchange.png" alt="toggle">
+        </button>
+      </div>
+      <ul class="aside-links js-aside-links">
+        <li class="aside-link js-aside-link active" data-content="js-campaign-list">Campaign List
+          <img src="../../assets/img/clipboard.png" alt="toggle">
+        </li>
+        <li class="aside-link js-aside-link" data-content="js-create-campaign">Create Campaign
+          <img src="../../assets/img/tab.png" alt="toggle">
+        </li>
+      </ul>
+    </aside>
+    <div class="content">
+      <div class="campaign-list js-content-data content-data js-campaign-list active">
+        <div class="campaign-list-table">
+          <div class="campaign-list-table-head">
+            <div class="table-row">
+              <div class="table-column">#</div>
+              <div class="table-column">Name</div>
+              <div class="table-column">Description</div>
+              <div class="table-column">Date</div>
+              <div class="table-column">Point</div>
+              <div class="table-column">Actions</div>
+            </div>
+          </div>
+          <div class="campaign-list-table-body" id="campaignList">
+
+          </div>
+
+        </div>
+        <div class="campaign-list-table-mobile">
+          <div class="campaign-list-table-body" id="campaignListMobile">
+
+          </div>
+        </div>
+      </div>
+      <div class="create-campaign js-content-data content-data js-create-campaign">
+        <h5 class="title">Create Campaign</h5>
+        <form class="create-campaign-form js-create-campaign-form">
+          <div class="input-group">
+            <label class="form-label">Campaign name</label>
+            <input type="text" class="campaign-name js-campaign-name">
+            <span class="js-campaign-name-error error">error</span>
+          </div>
+          <div class="input-group">
+            <label class="form-label">Campaign description</label>
+            <input type="text" class="campaign-description js-campaign-description">
+            <span class="js-campaign-description-error error">error</span>
+          </div>
+          <button type="submit" class="save-button js-save-button">Save Campaign</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <!--  Main Section End-->
+
+  <!-- Edit Modal HTML -->
+  <div class="modal-edit js-modal-edit">
+    <div class="edit-modal-content js-modal-edit-content scale-up-center">
+      <div class="modal-edit-header">
+        <h5 class="modal-title">
+          Edit Campaign
+        </h5>
+      </div>
+      <div class="modal-edit-body">
+        <form class="js-edit-form edit-form">
+          <div class="input-group">
+            <label class="form-label">Campaign name</label>
+            <input type="text" class="campaign-name js-modal-campaign-name">
+            <span class="js-campaign-name-error error">error</span>
+          </div>
+          <div class="input-group">
+            <label class="form-label">Campaign description</label>
+            <input type="text" class="campaign-description js-modal-campaign-description">
+            <span class="js-campaign-description-error error">error</span>
+          </div>
+          <button type="submit" class="edit-button">Sign in</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Edit Modal End HTML -->
+
+  <!--  Alert Section -->
+  <div class="alert-message js-alert-message scale-up-center"></div>
+  <!--  Alert Section End-->
+
+  <script type="module" src="../../assets/js/list-page/app.js"></script>
+</body>
+
+</html>
