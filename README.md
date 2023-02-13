@@ -21,7 +21,8 @@ npm install -g json-server
 After the installations are successful, we need to run Json-server
 
 ```
-json-server --watch .\assets\api\db.json
+cd \assets\api
+json-server --watch db.json
 
 // Since it runs on" json server and react" 3000 port, we need to start json server first.
 ```
